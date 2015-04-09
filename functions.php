@@ -285,21 +285,19 @@ function km_register_meta_boxes( $meta_boxes )
                 'clone' => false,
             ),
             array(
-              'name'        => __( 'Responsibilities', 'meta-box' ),
-              'id'          => $prefix . "select",
-              'type'        => 'select',
-              // Array of 'value' => 'Label' pairs for select box
-              'options'     => array(
-                'value1' => __( 'Front End', 'meta-box' ),
-                'value2' => __( 'WordPress', 'meta-box' ),
-                'value3' => __( 'UI/UX Design', 'meta-box' ),
-                'value4' => __( 'Responsive Design', 'meta-box' ),
-                'value5' => __( 'Mobile Design', 'meta-box' ),
+              'name' => __( 'Checkbox list', 'rwmb' ),
+              'id'   => $prefix ."resp",
+              'type' => 'checkbox_list',
+              // Options of checkboxes, in format 'value' => 'Label'
+              'options' => array(
+                'Front End Development' => __( 'Front End', 'rwmb' ),
+                'UI/UX Design' => __( 'UI/UX Design', 'rwmb' ),
+                'Responsive Design' => __( 'Responsive Design', 'rwmb' ),
+                'WordPress Development' => __( 'WordPress', 'rwmb' ),
+                'Mobile Design' => __( 'Mobile Design/Dev', 'rwmb' ),
+                'Strategy/Architecture' => __( 'Strategy/Architecture', 'rwmb' ),
+                'Prototyping' => __( 'Prototyping', 'rwmb' ),
               ),
-              // Select multiple values, optional. Default is false.
-              'multiple'    => true,
-              'std'         => 'value1',
-              'placeholder' => __( 'Select an Item', 'meta-box' ),
             ),
             array(
                 'name'  => '"Challenge"',

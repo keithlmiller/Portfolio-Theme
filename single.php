@@ -10,6 +10,7 @@
 						<?php
 							$subTitle = rwmb_meta( 'km_subTitle' );
 							$url = rwmb_meta( 'km_URL' );
+							$responsibilities = rwmb_meta( 'km_resp', 'type=checkbox_list' );
 							$chal = rwmb_meta( 'km_chal' );
 							$subTitle2 = rwmb_meta( 'km_descTitle' );
 							$chalTitle = rwmb_meta( 'km_chalTitle' );
@@ -25,7 +26,7 @@
 								<h1 class="title"><?php the_title(); ?></h1>
 								<h2 class="subTitle"><?php echo $subTitle ?></h2>
 							</div>
-							<a class="btn seeLive" href="<?php echo $url ?>">See it Live</a>
+							<a class="btn lnk seeLive" href="<?php echo $url ?>">See it Live</a>
 						</header>
 					</div>
 				</div>
@@ -43,10 +44,13 @@
 								<div id="resp">
 									<h4 class="smallTitle">Responsibilities</h4>
 									<ul>
-										<li>Front-end Development</li>
-										<li>Strategy</li>
-										<li>Responsive UI Design</li>
-										<li>Wordpress Development</li>
+										<?php 
+										
+										foreach ( $responsibilities as $resp )
+											{
+											    echo "<li>".$resp."</li>";
+											}
+										?>
 									</ul>
 								</div>
 								<div id="chal">
@@ -78,7 +82,8 @@
 									echo "<p>".$desc3."</p>";
 								}
 							?>
-							
+							<h3 class="thanks">Thanks for Reading!</h3>
+							<div id="nextPost"><span class="prev"><?php previous_post_link();?></span><span class="next">  <?php next_post_link(); ?></span></div>
 						</div>
 
 						<?php endwhile; ?>

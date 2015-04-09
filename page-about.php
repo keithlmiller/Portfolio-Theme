@@ -17,33 +17,26 @@ Template Name: About Template
 			<div id="content" class="otherpage">
 				<div id="inner-content" class="wrap clearfix">
 					<div id="main" class="first clearfix" role="main">
-						<header class="article-header topHeader clearfix">
+						<header class="article-header topHeader clearfix d-3of4">
 							<div class="headlines">
 								<h1 class="title">About Me</h1>
 								<h2 class="subTitle">Hi, my name is Keith Miller</h2>
 							</div>
 						</header>
-						<div id="myBio">
+						<div id="myBio" class="d-3of4">
 							<p>I’m a web developer and UX designer currently finishing up my degree in 
 							Interactive Digital Media at Drexel University.</p>
 							<p>In my four years of college I’ve explored front-end and back-end development, 
 							graphic design, UX design, typography, drawing, photography, game design, 3D animation, and more.</p>
 							<p>I’m passionate about working on great looking apps and websites that are designed around the 
-							user and creating unique and pleasurable digital experiences. </p>
+							user. I believe that the right coupling of design and technology has great power to create meaningful 
+							and delightful digital experiences. As an aspiring lifelong learner, my goal is to keep exploring and
+							discovering how I can help make these types of projects come to life. </p>
 						</div>
 						<div id="myPic"></div>
-						<ul class="ch-grid">
-							<li>
-								<div class="ch-item ch-img-1">
-									<div class="ch-info">
-										<h3>Brainiac</h3>
-										<p>by Daniel Nyari <a href="http://drbl.in/eODP">View on Dribbble</a></p>
-									</div>
-								</div>
-							</li>
-						</ul>
+						</ul> 
 						<div id="skills">
-							<h3 class="sectionTitle">Stuff I Like</h3>
+							<h3 class="sectionTitle">What I Do</h3>
 							<ul>
 								<li class="skill dev">
 									<a href="#development"><span>Development</span></a>
@@ -56,6 +49,7 @@ Template Name: About Template
 								</li>
 							</ul>
 						</div>
+						<div id="skillArrow" class="arrow-down"></div>
 						<div id="skillDesc">
 						</div>
 					</div>		

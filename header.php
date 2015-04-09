@@ -27,10 +27,10 @@
 
 		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-touch-icon.png">
-		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
+		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon-v2.png">
 
 		<!--[if IE]>
-			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
+			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon-v2.ico">
 		<![endif]-->
 		<?php // or, set /favicon.ico for IE10 win ?>
 		<meta name="msapplication-TileColor" content="#f01d4f">
@@ -62,7 +62,7 @@
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 
-					<!-- <button id="menuToggle"></button> -->
+					<button id="menuToggle"></button>
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
@@ -81,11 +81,13 @@
 					</nav>
 					<div id="contact">
 						<div id="email">
-							<h4>Email</h4>
-							<p>keithmillerweb@gmail.com</p>
+							<h4>Email Me</h4>
+							<p><address>
+   <a href="mailto:keithmillerweb@gmail.com"><span>keithmillerweb</span><span>@gmail.com</span></a>
+</address></p>
 						</div>
 						<div id="socialMedia">
-							<h4>Social Media</h4>
+							<h4>Hit Me Up</h4>
 							<a href="www.linkedin.com/in/keithmillerweb"><img src="<?php echo get_template_directory_uri(); ?>/library/images/linkedin.png"></a>
 							<a href="https://twitter.com/keithmillerweb"><img src="<?php echo get_template_directory_uri(); ?>/library/images/twitter.png"></a>
 						</div>

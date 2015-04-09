@@ -19,11 +19,11 @@ Template Name: Homepage Template
 					<div id="main" class=" first clearfix" role="main">
 						<div id="homeTop" class="clearfix">
 							<section id="homeIntro" class="d-2of5">
-								<h1 class="title">Who is Keith?</h1>
-								<p>Hi! I’m a front-end developer and UX designer based in Philadelphia. 
+								<h1 class="title">Hello, I'm Keith</h1>
+								<p>I’m a front-end developer and UX designer based in Philadelphia. 
 								I’m passionate about creating and designing delightful web experiences.</p>
 
-								<a class="btn" href="<?php echo home_url(); ?>/about-me">Get to know me</a>
+								<a class="btn lnk" href="<?php echo home_url(); ?>/about-me">Get to know me</a>
 							</section>
 						</div>
 						<div id="homeWork" class="clearfix">
@@ -38,7 +38,7 @@ Template Name: Homepage Template
 								</article>
 
 								<?php endwhile;?>
-								<a class="btn" href="<?php echo home_url(); ?>/my-work">See More Projects</a>
+								<a class="btn lnk" href="<?php echo home_url(); ?>/my-work">See More Projects</a>
 							</div>
 							
 						</div>

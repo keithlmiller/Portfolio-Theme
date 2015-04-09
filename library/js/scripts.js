@@ -105,9 +105,9 @@ function loadGravatars() {
 
 
 jQuery(document).ready(function($) {
-  var devDesc = "<h3 class='sectionTitle'>Development</h3><p>I love making things with front end development using HTML5, CSS, and JavaScript. My experience with backend development mostly involves PHP and MySQL, and accessing APIs such as Twitter, Reddit, and New York Times. I’m also comfortable digging into WordPress to create custom themes. I’ve worked with jQuery Mobile and PhoneGap forAndroid and I’m currently learning Swift for iOS app development.</p>";
+  var devDesc = "<h3 class='sectionTitle'>Development</h3><p>Front end development has been my passion for the last four years, and each year my skill with HTML5, CSS, and JavaScript has drastically grown. I’m amazed at how far the technology has come and I’m excited about what amazing products and experiences I can create in the future. </p><p> My experience with backend development mostly involves PHP and MySQL, and accessing APIs such as Twitter, Reddit, and New York Times. I’m also comfortable digging into WordPress to create custom themes. I’ve worked with jQuery Mobile and PhoneGap for Android and I’m currently learning Swift for iOS app development.</p>";
   var uxDesc = "<h3 class='sectionTitle'>User Experience</h3><p>My background with user experience design goes deep into both theory and practice. I’ve worked with creating personas, consulting clients, and conducting qualitative user testing with both paper and digital prototypes.</p><p>Throughout the design process I am driven by empathy for the user, with the ultimate goal of designing for experiences that are not just easy, but also delightful for the user.</p>";
-  var designDesc = "<h3 class='sectionTitle'>Design</h3><p>I do web design, logo design, and more. Both colors and motion should be beautiful and I’m continually honing my eye for detail and cohesiveness in design.</p><p>Regardless of what I’m making my process always starts on paper, getting ideas out quick and dirty to find what might work. Next I bring it into Photshop or Illustrator to create wireframes. </p><p>Meanwhile I start developing a design language with suitable fonts, colors and shapes. From here I either make a 'style tile' or full mock-ups, depending on the project. Each step of the way comes withiteration and feedback from peers.</p>";
+  var designDesc = "<h3 class='sectionTitle'>Design</h3><p>I do web design, logo design, and more. Both colors and motion should be beautiful and I’m continually honing my eye for detail and cohesiveness in design.</p><p>Regardless of what I’m making my process always starts on paper, getting ideas out quick and dirty to find what might work. Next I bring it into Photoshop or Illustrator to create wireframes. </p><p>Meanwhile I start developing a design language with suitable fonts, colors and shapes. From here I either make a 'style tile' or full mock-ups, depending on the project. Each step of the way comes with iteration and feedback from peers.</p>";
   /*
    * Let's fire off the gravatar function
    * You can remove this if you don't need it
@@ -117,16 +117,26 @@ jQuery(document).ready(function($) {
   jQuery ("#skillDesc" ).html(devDesc);
   jQuery(".dev a").on('click', function() {
       jQuery( "#skillDesc" ).html(devDesc);
+      jQuery( "#skillArrow" ).removeClass("middleSkill");
+      jQuery( "#skillArrow" ).removeClass("rightSkill");
+      jQuery( "#skillArrow" ).addClass("leftSkill");
   });
   jQuery(".ux a").on('click', function() {
       jQuery( "#skillDesc" ).html(uxDesc);
+      jQuery( "#skillArrow" ).addClass("middleSkill");
+      jQuery( "#skillArrow" ).removeClass("rightSkill");
+      jQuery( "#skillArrow" ).removeClass("leftSkill");
   });
   jQuery(".design a").on('click', function() {
       jQuery( "#skillDesc" ).html(designDesc);
+      jQuery( "#skillArrow" ).removeClass("middleSkill");
+      jQuery( "#skillArrow" ).addClass("rightSkill");
+      jQuery( "#skillArrow" ).removeClass("leftSkill");
   });
   jQuery('a[title="contact"]').on('click', function() {
       jQuery( ".header" ).toggleClass("tall");
-      console.log("contact clicked");
   });
-
+  jQuery('#menuToggle').on('click', function() {
+      jQuery( ".header" ).toggleClass("tall");
+  });
 }); /* end of as page load scripts */
