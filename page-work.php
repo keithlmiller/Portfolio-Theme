@@ -29,7 +29,7 @@ Template Name: Work Template
   							while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" class="work">
-								<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('bones-thumb-334'); ?><h4><?php the_title(); ?></h4></a>
+								<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('bones-thumb-334'); ?><h4><?php the_title(); ?></h4><span>View</span></a>
 
 							</article>
 
